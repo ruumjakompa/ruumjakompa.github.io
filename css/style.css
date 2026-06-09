@@ -565,4 +565,12 @@ p  { color: var(--clr-muted); max-width: 65ch; }
   .news-card__featured { grid-column: span 1; grid-template-columns: 1fr; }
   .news-card__featured .news-card__img { min-height: 200px; }
 
-  .contact__inner {
+  .contact__inner { grid-template-columns: 1fr; gap: 2rem; }
+
+  .footer__inner { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+@media (max-width: 480px) {
+  .hero__actions { flex-direction: column; }
+  .btn { justify-content: center; }
+}
