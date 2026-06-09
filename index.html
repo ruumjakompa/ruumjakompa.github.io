@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RUUM JA KOMPA STUUDIO — Kunstikursused, kunstiringid ja sündmused</title>
+  <meta name="description" content="Kunstikursused, kunstiringid ja sündmused Laagris. Täiskasvanute ja laste kunstiringid, linnalaager ning eriüritused. Aadress: Vae 2, Laagri.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="#" class="nav__logo">
+      <img src="images/rjks-ikoon.jpg" alt="RUUM JA KOMPA STUUDIO logo">
+      <span>RUUM JA KOMPA</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="#galerii">Galerii</a></li>
+      <li><a href="#kursused">Kursused</a></li>
+      <li><a href="#juhendaja">Juhendaja</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a href="#kontakt" class="btn nav__cta">Tule tundi!</a>
+    <button class="nav__hamburger" aria-label="Menüü" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero section">
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="label hero__tag">Laagri · Harjumaa · Eesti</p>
+        <h1 class="hero__title">Ruum ja Kompa<br><em>stuudio.</em></h1>
+        <p class="hero__subtitle">
+          RUUM JA KOMPA STUUDIO on loovuse kodu Laagris — kunstiringid lastele ja täiskasvanutele, linnalaagrid ning töötoad.
+        </p>
+        <div class="hero__actions">
+          <a href="#kontakt" class="btn btn--primary">Võta ühendust</a>
+          <a href="#kursused" class="btn btn--outline">Vaata kursuseid</a>
+        </div>
+      </div>
+      <div class="hero__image-grid">
+        <img src="images/rjks-ikoon.png" alt="RUUM JA KOMPA stuudio" loading="lazy">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ GALLERY ═══════════════════ -->
+<section class="gallery section" id="galerii">
+  <div class="container">
+    <div class="gallery__intro">
+      <h2>Stuudio ja tööd</h2>
+      
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--wide gallery__item--tall" onclick="openLightbox('images/studio-wide.jpg')">
+        <img src="images/studio-wide.jpg" alt="Stuudio" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/gallery-3.jpg')">
+        <img src="images/gallery-3.jpg" alt="Kunstiring" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/gallery-4.jpg')">
+        <img src="images/gallery-4.jpg" alt="Kunstiring" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/gallery-1.jpg')">
+        <img src="images/gallery-1.jpg" alt="Kunstiring" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/gallery-2.jpg')">
+        <img src="images/gallery-2.jpg" alt="Kunstiring" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/gallery-5.jpg')">
+        <img src="images/gallery-5.jpg" alt="Kunstiring" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/gallery-7.jpg')">
+        <img src="images/gallery-7.jpg" alt="Kunstiring" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/gallery-8.jpg')">
+        <img src="images/gallery-8.jpg" alt="Kunstiring" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/gallery-9.jpg')">
+        <img src="images/gallery-9.jpg" alt="Kunstiring" loading="lazy">
+      </div>
+      <div class="gallery__item gallery__item--wide" onclick="openLightbox('images/gallery-10.jpg')">
+        <img src="images/gallery-10.jpg" alt="Kunstiõpe" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/gallery-11.jpg')">
+        <img src="images/gallery-11.jpg" alt="Kunstiõpe" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/gallery-6.jpg')">
+        <img src="images/gallery-6.jpg" alt="Kunstiõpe" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/301867013.jpg')">
+        <img src="images/301867013.jpg" alt="Stuudio" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/302457884.jpg')">
+        <img src="images/302457884.jpg" alt="Stuudio" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/321480793.jpg')">
+        <img src="images/321480793.jpg" alt="Stuudio" loading="lazy">
+      </div>
+      <div class="gallery__item" onclick="openLightbox('images/studio-2.jpg')">
+        <img src="images/studio-2.jpg" alt="Stuudio" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox__close" aria-label="Sulge">✕</button>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="Galerii pilt">
+</div>
+
+<!-- ═══════════════════ COURSES ═══════════════════ -->
+<section class="section section--alt" id="kursused">
+  <div class="container">
+    <div class="courses__intro">
+      <h2>Kursused &amp; ringid</h2>
+      <p>Teretulnud on kõik kogemustasemed ja vanusegrupid.</p>
+    </div>
+    <div class="courses__grid">
+
+      <!-- Täiskasvanute kunstiring -->
+      <div class="course-card">
+        <div class="course-card__image">
+          <img src="images/taiskasvanute-kunstiring.png" alt="Täiskasvanute kunstiring" loading="lazy">
+        </div>
+        <div class="course-card__body">
+          <span class="course-card__tag">Täiskasvanutele</span>
+          <h3>Täiskasvanute kunstiring</h3>
+          <p>
+            Maalime vaikelu, inimkuju, loodust ja inspireerituna kunstnikest. Kasutame akrüüli, akvarelli, sütt jt tehnikaid.
+            Tunnid pakuvad nii raame, kui loomingulist vabadust. 
+          </p>
+          <div class="course-card__meta">
+            <span>📅 <strong>Neljapäeviti</strong> 18:00–19:30</span>
+            <span>📍 Vae 2, II korrus, Laagri</span>
+            <span>💶 <strong>70 €/kuu</strong> · proovitund 10 €</span>
+            <span>👩‍🏫 Juhendaja: Hanna Stina Heinloo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laste kunstiring -->
+      <div class="course-card">
+        <div class="course-card__image">
+          <img src="images/maali-kursus.png" alt="Laste kunstiring" loading="lazy">
+        </div>
+        <div class="course-card__body">
+          <span class="course-card__tag">Lastele</span>
+          <h3>Laste kunstiring</h3>
+          <p>
+            9–12-aastastele mõeldud loominguline ring. Joonistame, maalime, teeme kollaaže ja skulptuure.
+            Tutvume eesti kunstnikute loominguga inspiratsiooni ammutamiseks.
+          </p>
+          <div class="course-card__meta">
+            <span>📅 <strong>Teisipäeviti</strong> 15:00–16:00</span>
+            <span>📍 Vae 2, II korrus, Laagri</span>
+            <span>💶 <strong>62 €/kuu</strong> · esimene kuu 49 €</span>
+            <span>👩‍🏫 Juhendaja: Hanna Stina Heinloo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linnalaager -->
+      <div class="course-card">
+        <div class="course-card__image">
+          <img src="images/linnalaager.jpg" alt="Linnalaager lastele" loading="lazy">
+        </div>
+        <div class="course-card__body">
+          <span class="course-card__tag">Suvelaager</span>
+          <h3>Linnalaager lastele</h3>
+          <p>
+            Linnalaagri info peagi tulemas!
+          </p>
+          <div class="course-card__meta">
+            <span>📅 Juuli–august </span>
+            <span>📍 Laagri + Tallinn</span>
+            <span>💶 <strong>115 €/3 päeva</strong> (sh tegevused, vahendid, toidupakk, muuseumitund ja töötuba)</span>
+            <span>👦 Vanus: 9–12 aastat</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ INSTRUCTORS ═══════════════════ -->
+<section class="section" id="juhendaja">
+  <div class="container">
+    <div class="instructors__intro">
+      <h2>Juhendaja</h2>
+    </div>
+    <div class="instructors__grid">
+
+      <div class="instructor-card">
+        <img class="instructor-card__img" src="images/hannapic_new.jpg" alt="Hanna Stina Heinloo" loading="lazy">
+        <div class="instructor-card__body">
+          <h3 class="instructor-card__name">Hanna Stina Heinloo</h3>
+          <p>Aitäh, et oled jõudnud minu lehele!</p>
+          <p>Kunst kinkis mulle väljundi enda emotsioonide tabamiseks,<br>
+          armastuse väljendamiseks lähedastele,<br>
+          meele vaigistamiseks ja lugude jutustamiseks.</p>
+          <p>Tahan aidata ka teistel seda väljundit iseenda jaoks avada.</p>
+          <p>Õppisin Tartu Waldorfgümnaasiumis ja kunstiõpetajaks õpin Tallinna Ülikoolis ja EKA-s.<br>
+          Olen loonud graafilisi kujundusi ja töötanud igas vanuses laste ja noortega.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+<section class="section" id="kontakt">
+  <div class="container">
+    <div class="contact__inner">
+
+      <div class="contact__info">
+        <h2>Võta ühendust</h2>
+        <p>Ootan huvilisi kõikides vanusegruppides!</p>
+
+        <ul class="contact__details">
+          <li>
+            <span class="detail-icon">📍</span>
+            <span>Vae 2, II korrus, Laagri alevik, Harjumaa, Eesti</span>
+          </li>
+          <li>
+            <span class="detail-icon">✉️</span>
+            <a href="mailto:ruumjakompa@gmail.com">ruumjakompa@gmail.com</a>
+          </li>
+          <li>
+            <span class="detail-icon">📞</span>
+            <span>Hanna Stina: <a href="tel:+37255527689">55527689</a></span>
+          </li>
+          <li>
+            <span class="detail-icon">⏰</span>
+            <span>Täiskasvanute ring: neljap. 18:00–19:30<br>Laste ring: teisip. 15:00–16:00</span>
+          </li>
+        </ul>
+
+        <div class="contact__social">
+          <a href="https://www.facebook.com/ruumjakompastuudio" target="_blank" rel="noopener" class="social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+          <a href="https://www.instagram.com/ruumjakompa_stuudio" target="_blank" rel="noopener" class="social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+        </div>
+
+        <div class="contact__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2031.4!2d24.609706878662113!3d59.34898757934571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692931!2sVae%202%2C%20Laagri!5e0!3m2!1set!2see!4v1"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="RUUM JA KOMPA STUUDIO asukoht">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="contact__form-wrapper">
+        <h3>Saada mulle sõnum</h3>
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/mrevkvjy"
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="name">Nimi</label>
+            <input type="text" id="name" name="name" placeholder="Sinu nimi" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email" placeholder="sinu@email.ee" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Huvitab</label>
+            <select id="subject" name="subject" style="width:100%;padding:.7rem 1rem;border:1.5px solid var(--clr-line);border-radius:6px;font-family:var(--ff-sans);font-size:.95rem;background:var(--clr-bg);color:var(--clr-ink);">
+              <option value="">Vali kursus...</option>
+              <option value="Täiskasvanute kunstiring">Täiskasvanute kunstiring</option>
+              <option value="Laste kunstiring">Laste kunstiring (9–12 a)</option>
+              <option value="Linnalaager">Linnalaager (9–12 a)</option>
+              <option value="Muu">Muu küsimus</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Sõnum</label>
+            <textarea id="message" name="message" placeholder="Kirjelda oma huvi, küsi infot registreerumise kohta..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">Saada sõnum</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="images/rjks-ikoon.jpg" alt="RUUM JA KOMPA logo">
+          <strong>RUUM JA KOMPA STUUDIO</strong>
+        </div>
+        <p>Kunstikursused, kunstiringid ja sündmused Laagris.<br>Avatud kõigile, kes armastavad kunsti.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Programmid</h4>
+        <ul>
+          <li><a href="#kursused">Täiskasvanute kunstiring</a></li>
+          <li><a href="#kursused">Laste kunstiring</a></li>
+          <li><a href="#kursused">Linnalaager</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#galerii">Galerii</a></li>
+          <li><a href="#juhendaja">Juhendaja</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="mailto:ruumjakompa@gmail.com">ruumjakompa@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 RUUM JA KOMPA STUUDIO. Vae 2, Laagri, Harjumaa.</span>
+      <span>
+        <a href="https://www.facebook.com/ruumjakompastuudio" target="_blank" rel="noopener">Facebook</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.instagram.com/ruumjakompa_stuudio" target="_blank" rel="noopener">Instagram</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════ SCRIPTS ═══════════════════ -->
+<script>
+  /* Mobile menu */
+  function toggleMenu(btn) {
+    const links = document.querySelector('.nav__links');
+    const open = links.style.display === 'flex';
+    links.style.cssText = open
+      ? ''
+      : 'display:flex;flex-direction:column;position:absolute;top:4rem;left:0;right:0;background:var(--clr-bg);border-bottom:1px solid var(--clr-line);padding:1rem 1.5rem 1.5rem;gap:1rem;';
+  }
+
+  /* Lightbox */
+  function openLightbox(src) {
+    document.getElementById('lightboxImg').src = src;
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  /* Contact form — Formspree */
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('[type="submit"]');
+    btn.textContent = 'Saadan...';
+    btn.disabled = true;
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.innerHTML = '<p style="text-align:center;padding:2rem 0;font-size:1.1rem;">✅ Sõnum saadetud! Võtan teiega varsti ühendust.</p>';
+      } else {
+        btn.textContent = 'Saada sõnum';
+        btn.disabled = false;
+        alert('Midagi läks valesti. Palun proovi uuesti või kirjuta otse ruumjakompa@gmail.com');
+      }
+    } catch {
+      btn.textContent = 'Saada sõnum';
+      btn.disabled = false;
+      alert('Midagi läks valesti. Palun proovi uuesti või kirjuta otse ruumjakompa@gmail.com');
+    }
+  });
+
+  /* Smooth scroll offset for fixed nav */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href').slice(1);
+      if (!id) return;
+      const el = document.getElementById(id);
+      if (!el) return;
+      e.preventDefault();
+      const y = el.getBoundingClientRect().top + window.scrollY - 72;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      // close mobile menu
+      document.querySelector('.nav__links').style.cssText = '';
+    });
+  });
+</script>
+
+</body>
+</html>
