@@ -541,7 +541,7 @@ p  { color: var(--clr-muted); max-width: 65ch; }
 
 @media (max-width: 768px) {
   .nav__links { display: none; }
-  .nav__hamburger { display: block; }
+  .nav__hamburger { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 44px; height: 44px; }
   .nav__cta { display: none; }
 
   .hero__inner { grid-template-columns: 1fr; gap: 2rem; }
@@ -558,6 +558,8 @@ p  { color: var(--clr-muted); max-width: 65ch; }
   .courses__grid { grid-template-columns: 1fr; }
 
   .instructors__grid { grid-template-columns: 1fr; }
+  .instructor-card { flex-direction: column; }
+  .instructor-card__img { width: 100%; height: auto; object-fit: contain; }
 
   .news__grid { grid-template-columns: 1fr; }
   .news-card__featured { grid-column: span 1; grid-template-columns: 1fr; }
